@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materialize_Page</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+    
+
+
+    <a href="./bootstrap.html" class="btn-floating btn-large waves-effect waves-light red">BTSRP</a>
+    <a href="./index.html" class="btn-floating btn-large waves-effect waves-light red">HOME</a>
+
+    <body style="background-image: url(/blue_background.webp); background-size: fixed;">
+        <main class="container">
+    <h1>Materialize</h1> 
+            <div class="row" >
+                <div class="col s12 m6">
+                    <h1>{{data.user.fullName}}</h1>
+                </div>
+                <br>
+    
+                <div class="text-center col s12 m6">
+                    <img src="{{data.user.photo}}" class="rounded col m8" alt="...">
+                  </div>
+    
+            </div>
+            
+          
+            <div class="row">
+    <br>
+    <h1>{{data.city.name}}</h1>
+    <div class="col s12 m5 ">
+    
+        <img src="{{data.city.photo}}" class="rounded col m12 " alt="Durban">
+                </div>
+                <div class="text-center card #039be5 light-blue darken-1 col s11 m7 ">
+                <p>{{data.city.description}}</p>
+                </div>
+    
+            </div>
+    
+    
+    
+            <div>
+    
+                <div >
+                    <h1>Foreign language to be Learnt:</h1>
+                    <h3>{{data.foreignLanguage.language}}</h3>
+                    
+    
+                    <table class="table table-card #00bcd4 cyan">
+                        <thead>
+                          <tr>
+                            <th scope="col">English Phrase</th>
+                            <th scope="col">Foreign Phrase</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        {{#each data.foreignLanguage.phrases}}
+                          <tr>
+                            <td>{{englishPhrase}}</td>
+                            <td>{{foreignLanguage}}</td>
+                          </tr>
+                          {{/each}}
+                        </tbody>
+                      </table>
+                      
+                </div>
+                
+                <div class="text-center card #009688 teal">
+                <h1>{{data.course}}</h1>
+                      <h2>{{data.Institution}}</h2>
+                      <h3>Favourite Subjects</h3>
+    
+                </div>
+    
+            </div>
+    
+            <div class="row">
+                    {{#each data.favouriteSubjects}}
+                <div class="col s12 m7">
+                  <div class="card blue-grey darken-1">
+                    <div class="card-content white-text"> 
+                      <img src="{{photo}}" class="round col s1 m6" alt="Subject">
+                      <span class="card-title">{{name}}</span>
+                      <p></p>{{description}}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                {{/each}}
+              </div>
+                     
+    
+    
+            <div>
+    
+                </div>
+    
+            </div>
+        </main>
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+    </html>

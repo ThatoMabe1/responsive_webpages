@@ -1,0 +1,44 @@
+{
+    "user" : {
+        "fullName": "Thato Mabe",
+        "photo" : "Thato.jpg"
+    },
+    "city" : {
+        "name" : "Durban",
+        "photo" : "Durban.jpg",
+        "description" : "South Africa's third-largest City and one of the fastest-growing urban Areas in the World. It's Port is the busiest in South Africa and also one of the 10 largest in the World. Durban is blessed with humid weather and a warm current in the Ocean, making it the 'perfect holiday paradise!'"
+    },
+    "foreignLanguage" : {
+        "language" : "KiSwahili",
+        "phrases" : [{
+            "englishPhrase" : "Nice to meet you",
+            "foreignLanguage" : "Nafurahi kukuona"
+        },
+        {
+            "englishPhrase" : "Where are you from?",
+            "foreignLanguage" : "Unatoka wapi?"
+        }]
+    },
+    "favouriteSubjects" : [
+        {
+            "name" : "Mathematics",
+            "description" : "Science of number, quantity, and space, either as abstract concepts ( pure mathematics ), or as applied to other disciplines such as physics and engineering",
+            "photo" : "Mathematics.jpg"
+        },
+        {
+            "name" : "Physics",
+            "description" : " A branch of science that deals with the structure of matter and how the fundamental constituents of the universe interact. It studies objects ranging from the very small using quantum mechanics to the entire universe using general relativity.",
+            "photo" : "Physics.jpg"
+        },
+        {
+            "name" : "Material science",
+            "description" : "An interdisciplinary field of researching and discovering materials. Materials engineering is an engineering field of finding uses for materials in other fields and industries.",
+            "photo" : "Material science.jpg"
+        },
+        {
+            "name" : "System Dynamics",
+            "description" : "An approach to understanding the nonlinear behaviour of complex systems over time using stocks, flows, internal feedback loops, table functions and time delays.",
+            "photo" : "System dynamics.jpg"
+        }
+    ]
+}
